@@ -5,7 +5,9 @@
     <p>{{ now }}</p>
     <button @click="() => $forceUpdate()">forceUpdate</button>
     <br />
-    <input v-model="message" />
+    <div style="margin-top: 20px;">
+      <input v-model="message" />
+    </div>
   </div>
 </template>
 <script>
