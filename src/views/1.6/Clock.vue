@@ -30,10 +30,11 @@ export default {
     console.log("created");
   },
   beforeMount() {
+        console.log(this.$el);
     console.log("beforeMount");
   },
   mounted() {
-    console.log("mounted");
+    console.log(this.$el);
     this.startClock();
   },
   beforeUpdate() {

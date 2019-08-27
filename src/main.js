@@ -6,6 +6,7 @@ import "ant-design-vue/dist/antd.css";
 
 Vue.config.productionTip = false;
 Vue.use(antd);
+
 new Vue({
   router,
   render: h => h(App)

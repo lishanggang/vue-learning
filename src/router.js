@@ -41,11 +41,11 @@ export default new Router({
       name: "生命周期的应用场景和函数式组件",
       component: () => import("./views/1.6")
     },
-    // {
-    //   path: "/1.7",
-    //   name: "指令的本质",
-    //   component: () => import("./views/1.7")
-    // },
+    {
+      path: "/1.7",
+      name: "指令的本质",
+      component: () => import("./views/1.7")
+    },
     // {
     //   path: "/1.8",
     //   name: "provie/inject",
