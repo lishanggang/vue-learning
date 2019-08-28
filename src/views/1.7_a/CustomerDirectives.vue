@@ -18,22 +18,22 @@ export default {
   directives: {
     appendText: {
       bind() {
-        console.log("bind");
+        console.log("v-bind");
       },
       inserted(el, binding) {
         el.appendChild(document.createTextNode(binding.value));
-        console.log("inserted");
+        console.log("v-inserted");
       },
       update() {
-        console.log("update");
+        console.log("v-update");
       },
       componentUpdated(el, binding) {
         el.removeChild(el.childNodes[el.childNodes.length - 1]);
         el.appendChild(document.createTextNode(binding.value));
-        console.log("componentUpdated", el);
+        console.log("v-componentUpdated", el);
       },
       unbind() {
-        console.log("unbind");
+        console.log("v-unbind");
       }
     }
   },
