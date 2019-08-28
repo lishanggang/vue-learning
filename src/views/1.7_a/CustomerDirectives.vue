@@ -3,13 +3,18 @@
     <button @click="show = !show">
       销毁
     </button>
-    <button v-if="show" v-append-text="`插入buttom后面 ${number}`" @click="number++">
-      更新
+    <button @click="number++">
+      按钮+1
     </button>
+    <Clock v-if="show" v-append-text="`hello ${number}`" :number="number" />
   </div>
 </template>
 <script>
+import Clock from "./Clock";
 export default {
+  components: {
+    Clock
+  },
   directives: {
     appendText: {
       bind() {
@@ -17,7 +22,7 @@ export default {
       },
       inserted(el, binding) {
         el.appendChild(document.createTextNode(binding.value));
-        console.log("inserted", el, binding);
+        console.log("inserted");
       },
       update() {
         console.log("update");
@@ -25,7 +30,7 @@ export default {
       componentUpdated(el, binding) {
         el.removeChild(el.childNodes[el.childNodes.length - 1]);
         el.appendChild(document.createTextNode(binding.value));
-        console.log("componentUpdated");
+        console.log("componentUpdated", el);
       },
       unbind() {
         console.log("unbind");

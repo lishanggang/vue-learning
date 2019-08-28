@@ -46,6 +46,11 @@ export default new Router({
       name: "指令的本质",
       component: () => import("./views/1.7")
     },
+    {
+      path: "/1.7_a",
+      name: "指令的本质",
+      component: () => import("./views/1.7_a")
+    },
     // {
     //   path: "/1.8",
     //   name: "provie/inject",
