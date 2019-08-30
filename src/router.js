@@ -51,11 +51,11 @@ export default new Router({
       name: "指令的本质",
       component: () => import("./views/1.7_a")
     },
-    // {
-    //   path: "/1.8",
-    //   name: "provie/inject",
-    //   component: () => import("./views/1.8")
-    // },
+    {
+      path: "/1.8",
+      name: "provie/inject",
+      component: () => import("./views/1.8")
+    },
     // {
     //   path: "/1.9",
     //   name: "如何优雅的获取跨层级组件(拒绝递归)",
