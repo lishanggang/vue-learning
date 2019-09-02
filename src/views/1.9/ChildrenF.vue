@@ -20,6 +20,7 @@ export default {
   },
   methods: {
     getARef() {
+      console.log(this.$parent)
       console.log(this.getParentRef());
     },
     getHRef() {

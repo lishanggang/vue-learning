@@ -37,6 +37,7 @@ export default {
   },
   methods: {
     getEH3Ref() {
+      console.log(this)
       console.log(this.childrenE);
     }
   }

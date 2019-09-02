@@ -56,11 +56,11 @@ export default new Router({
       name: "provie/inject",
       component: () => import("./views/1.8")
     },
-    // {
-    //   path: "/1.9",
-    //   name: "如何优雅的获取跨层级组件(拒绝递归)",
-    //   component: () => import("./views/1.9")
-    // },
+    {
+      path: "/1.9",
+      name: "如何优雅的获取跨层级组件(拒绝递归)",
+      component: () => import("./views/1.9")
+    },
     // {
     //   path: "/1.10",
     //   name: "template 和 JSX 对比及其他们的本质",
