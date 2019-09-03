@@ -1,6 +1,6 @@
 <template>
   <div class="border2">
-    <h3>F 结点</h3>
+    <h3>F 节点</h3>
     <button @click="getARef">获取A Ref</button>
     <button @click="getHRef">获取H Ref</button>
   </div>

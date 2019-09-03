@@ -1,6 +1,6 @@
 <template>
   <div class="border2">
-    <h3>H 结点</h3>
+    <h3>H 节点</h3>
   </div>
 </template>
 <script>

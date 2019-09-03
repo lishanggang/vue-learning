@@ -1,6 +1,6 @@
 <template>
   <div class="border1">
-    <h2>C 结点</h2>
+    <h2>C 节点</h2>
     <ChildrenE />
     <ChildrenF />
   </div>

@@ -1,10 +1,12 @@
 <template>
   <div class="border">
-    <h1>A 结点</h1>
+    <h1>A 节点</h1>
     <button @click="getEH3Ref">获取E h3 Ref</button>
-    <ChildrenB />
-    <ChildrenC />
-    <ChildrenD />
+    <div style="display: flex">
+        <ChildrenB />
+        <ChildrenC />
+        <ChildrenD />
+    </div>
   </div>
 </template>
 <script>
@@ -20,6 +22,7 @@ export default {
   provide() {
     return {
       setChildrenRef: (name, ref) => {
+        console.log({name})
         this[name] = ref;
       },
       getChildrenRef: name => {
@@ -37,7 +40,6 @@ export default {
   },
   methods: {
     getEH3Ref() {
-      console.log(this)
       console.log(this.childrenE);
     }
   }

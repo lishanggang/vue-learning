@@ -1,7 +1,7 @@
 <template>
   <div class="border2">
     <h3 v-ant-ref="c => setChildrenRef('childrenE', c)">
-      E 结点
+      E 节点
     </h3>
   </div>
 </template>
