@@ -4,7 +4,7 @@
       <a-tab-pane key="1" tab="章节1">
         <First />
       </a-tab-pane>
-      <a-tab-pane key="2" tab="章节2">
+      <a-tab-pane key="2" tab="章节2 ">
         <Second />
       </a-tab-pane>
       <a-tab-pane key="3" tab="章节3">
